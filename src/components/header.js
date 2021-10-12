@@ -1,30 +1,68 @@
-import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
+import * as React from 'react';
+import { styled, alpha } from '@mui/material/styles';
+import InputBase from '@mui/material/InputBase';
+import SearchIcon from '@mui/icons-material/Search';
+import { Typography } from '@material-ui/core';
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
+const Search = styled('div')(({ theme }) => ({
+    position: 'relative',
+    border: "1px solid black",
+    borderRadius: theme.shape.borderRadius,
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    '&:hover': {
+        backgroundColor: alpha(theme.palette.common.white, 0.25),
     },
-    AppBa:{
-        height:"50px",
-        background:"white"
-    }
+    marginRight: theme.spacing(2),
+    marginLeft: 0,
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+        marginLeft: theme.spacing(3),
+        width: '100%',
+    },
 }));
 
-const Header = (props) => {
-    const classes = useStyles();
-    return (
-        <div className={classes.root}>
-            <AppBar position="static"  className={classes.AppBa}>
-                <Toolbar>
-                </Toolbar>
-            </AppBar>
-        </div>
-    );
-};
+const StyledInputBase = styled(InputBase)(({ theme }) => ({
+    color: 'inherit',
+    '& .MuiInputBase-input': {
+        padding: theme.spacing(1, 1, 1, 0),
+        paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+        transition: theme.transitions.create('width'),
+        width: '100%',
+        [theme.breakpoints.up('md')]: {
+            width: '200ch',
+        },
+    },
+}));
 
-export default Header
+
+const SearchIconWrapper = styled('div')(({ theme }) => ({
+    padding: theme.spacing(0, 2),
+    height: '100%',
+    position: 'absolute',
+    pointerEvents: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+}));
+
+
+
+
+export default function PrimarySearchAppBar() {
+    return (
+        <>
+            <Search >
+                <SearchIconWrapper>
+                    <SearchIcon />
+                </SearchIconWrapper>
+                <StyledInputBase
+                    placeholder="Search…"
+                    inputProps={{ 'aria-label': 'search' }}
+                />
+            </Search>
+        </>
+
+
+    );
+}

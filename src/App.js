@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import Drawer from "./components/drawer";
-import Header from "./components/header";
+import Main from "./components/main";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className={classes.container}>
       <Drawer />
-      <Header />
+      <Main/>
     </div>
   );
 };

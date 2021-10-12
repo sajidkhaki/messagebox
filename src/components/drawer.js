@@ -16,7 +16,7 @@ import DeleteSweepIcon from "@material-ui/icons/DeleteSweep";
 import Warning from "@material-ui/icons/Warning";
 const useStyles = makeStyles({ 
   drawer: {
-    width: "280px",
+    width: "380px",
   },
 });
 
@@ -30,7 +30,7 @@ const Drawer = () => {
   ];
   return (
     <MUIDrawer variant="permanent" className={classes.drawer}>
-      <List>
+      <List className={classes.drawer}>
         {itemList.map((item, index) => {
           const { text, icon } = item;
           return (

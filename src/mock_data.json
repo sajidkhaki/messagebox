@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "Title": "welcome mail",
+        "Flag": "new"
+    },
+    {
+        "id": 2,
+        "Title": "falgged mail",
+        "Flag": "flagged"
+    },
+    {
+        "id": 3,
+        "Title": "spammed mail",
+        "Flag": "spam"
+    },
+    {
+        "id": 4,
+        "Title": "deleted mail",
+        "Flag": "deleted"
+    },
+    {
+        "id": 6,
+        "Title": "welcome again",
+        "Flag": "new"
+    }
+]
