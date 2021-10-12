@@ -2,8 +2,6 @@ import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-import { Typography } from '@material-ui/core';
-
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -30,7 +28,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
         transition: theme.transitions.create('width'),
         width: '100%',
         [theme.breakpoints.up('md')]: {
-            width: '200ch',
+            width: '100ch',
         },
     },
 }));
@@ -47,8 +45,6 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 }));
 
 
-
-
 export default function PrimarySearchAppBar() {
     return (
         <>
@@ -62,7 +58,5 @@ export default function PrimarySearchAppBar() {
                 />
             </Search>
         </>
-
-
     );
 }

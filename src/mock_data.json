@@ -1,27 +1,42 @@
 [
     {
         "id": 1,
-        "Title": "welcome mail",
-        "Flag": "new"
+        "Title": "New mail",
+        "message":"You received new email check the mailll",
+        "isFlagged": false,
+        "isSpammed":false,
+        "isDeleted":false
     },
     {
         "id": 2,
-        "Title": "falgged mail",
-        "Flag": "flagged"
+        "Title": "Falgged mail",
+        "message":"you have flagged this email",
+        "isFlagged": false,
+        "isSpammed":false,
+        "isDeleted":false
     },
     {
         "id": 3,
-        "Title": "spammed mail",
-        "Flag": "spam"
+        "Title": "Spammed mail",
+        "message":"welcome to the spammed email",
+        "isFlagged": false,
+        "isSpammed":false,
+        "isDeleted":false
     },
     {
         "id": 4,
-        "Title": "deleted mail",
-        "Flag": "deleted"
+        "Title": "Deleted mail",
+        "message":"welcome to the deleted mail",
+        "isFlagged": false,
+        "isSpammed":false,
+        "isDeleted":false
     },
     {
-        "id": 6,
-        "Title": "welcome again",
-        "Flag": "new"
+        "id": 5,
+        "Title": "New mail",
+        "message":"welcome to the new portal again",
+        "isFlagged": false,
+        "isSpammed":false,
+        "isDeleted":false
     }
 ]
