@@ -4,6 +4,9 @@ import Drawer from "./components/drawer";
 import Main from "./components/main";
 import Data from "./mock_data.json"
 import { makeStyles } from "@material-ui/core/styles";
+import _ from 'lodash';
+
+
 
 const useStyles = makeStyles({
   container: {
@@ -31,12 +34,11 @@ const App = () => {
   const findValue = (key) => {
     if (!key) return
     const currentState = [...state]
-    let found = currentState.filter((i) => {
-      return i.Title === key
-    })
+    let found = currentState.filter(o => o.Title.includes(key));
+    
     if (found.length > 0) {
       setsearchstate(found)
-    }else{
+    } else {
       setsearchstate([])
     }
   }
@@ -49,7 +51,7 @@ const App = () => {
   return (
     <div className={classes.container}>
       <Drawer data={state} />
-      <Main data={state} updateState={updateState} findValue={findValue}  searchList={searchstate} />
+      <Main data={state} updateState={updateState} findValue={findValue} searchList={searchstate} />
     </div>
   );
 };

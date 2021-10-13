@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "Title": "Falgged mail",
+        "Title": "Flagged mail",
         "message":"you have flagged this email",
         "isFlagged": false,
         "isSpammed":false,
