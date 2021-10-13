@@ -34,11 +34,12 @@ const App = () => {
   const findValue = (key) => {
     if (!key) return
     const currentState = [...state]
-    let found = currentState.filter(o => o.Title.includes(key));
-    
+    let found = currentState.filter((i) => {
+      return i.Title === key
+    })
     if (found.length > 0) {
       setsearchstate(found)
-    } else {
+    }else{
       setsearchstate([])
     }
   }
