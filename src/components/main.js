@@ -11,8 +11,8 @@ const Main = (props) => {
     return (
         <>
             <Box>
-                <Search data = {props.data}   />
-                <Cards data={props.data} updateState={props.updateState} />
+                <Search data = {props.data} findValue={props.findValue}   />
+                <Cards data={props.data} updateState={props.updateState} searchList = {props.searchList} />
             </Box>
         </>
     );

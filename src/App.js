@@ -14,6 +14,9 @@ const useStyles = makeStyles({
 const App = () => {
 
   const [state, setstate] = useState([]);
+  const [searchstate, setsearchstate] = useState([]);
+
+
   const updateState = (message) => {
 
     const currentState = [...state]
@@ -25,6 +28,19 @@ const App = () => {
     setstate(currentState)
   }
 
+  const findValue = (key) => {
+    if (!key) return
+    const currentState = [...state]
+    let found = currentState.filter((i) => {
+      return i.Title === key
+    })
+    if (found.length > 0) {
+      setsearchstate(found)
+    }else{
+      setsearchstate([])
+    }
+  }
+
   useEffect(() => {
     setstate(Data)
   }, []);
@@ -33,7 +49,7 @@ const App = () => {
   return (
     <div className={classes.container}>
       <Drawer data={state} />
-      <Main data={state} updateState={updateState} />
+      <Main data={state} updateState={updateState} findValue={findValue}  searchList={searchstate} />
     </div>
   );
 };

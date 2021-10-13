@@ -12,16 +12,20 @@ import { display } from '@mui/system';
 const cards = (props) => {
     const handleDelete = (message) => {
         message.isDeleted = true
+        message.isFlagged = false
+        message.isSpammed = false
         props.updateState(message)
     };
     const handleFlag = (message) => {
         message.isFlagged = true
-        message.isSpammed =false
+        message.isSpammed = false
+        message.isDeleted = false
         props.updateState(message)
     };
     const handleSpam = (message) => {
         message.isSpammed = true
         message.isFlagged = false
+        message.isDeleted = false
         props.updateState(message)
     };
 
@@ -79,7 +83,8 @@ const cards = (props) => {
 
     return (
         <>
-            {props.data.map(renderMessages)}
+
+            {props.searchList.length >0 ? props.searchList.map(renderMessages) : props.data.map(renderMessages)}
         </>
     );
 }

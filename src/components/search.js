@@ -51,8 +51,9 @@ export default function PrimarySearchAppBar(props) {
 
 
     const searchvalue = (e)=>{
-        //console.log("eee", e.target.value)
-        
+        console.log(e.target.value)
+        let keyword = e.target.value
+        props.findValue(keyword)
         }
 
 
@@ -62,7 +63,7 @@ export default function PrimarySearchAppBar(props) {
                 <StyledInputBase
                     placeholder="Search…"
                     inputProps={{ 'aria-label': 'search' }}
-                    onKeyPress={searchvalue}
+                    onChange={searchvalue}
                     />
                 <SearchIcon style={{marginTop:"10px"}} />
             </Search>
