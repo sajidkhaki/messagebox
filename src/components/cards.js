@@ -17,16 +17,33 @@ const cards = (props) => {
         props.updateState(message)
     };
     const handleFlag = (message) => {
-        message.isFlagged = true
-        message.isSpammed = false
-        message.isDeleted = false
-        props.updateState(message)
+        if(message.isFlagged == true){
+            message.isFlagged =false
+            message.isSpammed = false
+            message.isDeleted = false
+            props.updateState(message)
+        }else{
+            message.isFlagged =true
+            message.isSpammed = false
+            message.isDeleted = false
+            props.updateState(message)
+        }
+
     };
     const handleSpam = (message) => {
-        message.isSpammed = true
-        message.isFlagged = false
-        message.isDeleted = false
-        props.updateState(message)
+
+        if(message.isSpammed == true){
+            message.isSpammed = false
+            message.isFlagged = false
+            message.isDeleted = false
+            props.updateState(message)
+        }else{
+            message.isSpammed = true
+            message.isFlagged = false
+            message.isDeleted = false
+            props.updateState(message) 
+        }
+
     };
 
     const renderMessages = (message) => {
