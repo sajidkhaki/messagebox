@@ -1,82 +1,82 @@
 [
-    {
-        "id": 1,
-        "Title": "new",
-        "message":"You received new email check the mailll",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    },
-    {
-        "id": 2,
-        "Title": "flagged",
-        "message":"you have flagged this email",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    },
-    {
-        "id": 3,
-        "Title": "spammed",
-        "message":"welcome to the spammed email",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    },
-    {
-        "id": 4,
-        "Title": "deleted",
-        "message":"welcome to the deleted mail",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    },
-    {
-        "id": 5,
-        "Title": "new2",
-        "message":"welcome to the new portal again",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    },
-    {
-        "id": 6,
-        "Title": "new2",
-        "message":"welcome to the new portal again",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    },
-    {
-        "id": 7,
-        "Title": "new2",
-        "message":"welcome to the new portal again",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    },
-    {
-        "id": 8,
-        "Title": "new2",
-        "message":"welcome to the new portal again",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    },
-    {
-        "id": 9,
-        "Title": "new2",
-        "message":"welcome to the new portal again",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    },
-    {
-        "id": 10,
-        "Title": "new2",
-        "message":"welcome to the new portal again",
-        "isFlagged": false,
-        "isSpammed":false,
-        "isDeleted":false
-    }
+  {
+    "id": 1,
+    "title": "new",
+    "message": "You received new email check the mailll",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  },
+  {
+    "id": 2,
+    "title": "flagged",
+    "message": "you have flagged this email",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  },
+  {
+    "id": 3,
+    "title": "spammed",
+    "message": "welcome to the spammed email",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  },
+  {
+    "id": 4,
+    "title": "deleted",
+    "message": "welcome to the deleted mail",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  },
+  {
+    "id": 5,
+    "title": "title5",
+    "message": "welcome to the new portal again",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  },
+  {
+    "id": 6,
+    "title": "title6",
+    "message": "welcome to the new portal again",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  },
+  {
+    "id": 7,
+    "title": "title7",
+    "message": "welcome to the new portal again",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  },
+  {
+    "id": 8,
+    "title": "title8",
+    "message": "welcome to the new portal again",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  },
+  {
+    "id": 9,
+    "title": "title9",
+    "message": "welcome to the new portal again",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  },
+  {
+    "id": 10,
+    "title": "title10",
+    "message": "welcome to the new portal again",
+    "isFlagged": false,
+    "isSpammed": false,
+    "isDeleted": false
+  }
 ]

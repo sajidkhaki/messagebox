@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./styles.css";
+
 import Drawer from "./components/drawer";
 import Main from "./components/main";
-import Data from "./mock_data.json"
+import Data from "./mock_data.json";
 import { makeStyles } from "@material-ui/core/styles";
-import _ from 'lodash';
-
-
 
 const useStyles = makeStyles({
   container: {
@@ -15,44 +12,46 @@ const useStyles = makeStyles({
 });
 
 const App = () => {
-
   const [state, setstate] = useState([]);
   const [searchstate, setsearchstate] = useState([]);
 
-
   const updateState = (message) => {
-
-    const currentState = [...state]
+    const currentState = [...state];
 
     let messageIndex = currentState.findIndex((item) => {
-      return item.id === message.id
-    })
-    currentState[messageIndex] = message
-    setstate(currentState)
-  }
+      return item.id === message.id;
+    });
+    currentState[messageIndex] = message;
+    setstate(currentState);
+  };
 
   const findValue = (key) => {
-    if (!key) return
-    const currentState = [...state]
+    if (!key) return;
+    const currentState = [...state];
     let found = currentState.filter((i) => {
-      return i.Title === key
-    })
+      return i.title === key;
+    });
     if (found.length > 0) {
-      setsearchstate(found)
-    }else{
-      setsearchstate([])
+      setsearchstate(found);
+    } else {
+      setsearchstate([]);
     }
-  }
+  };
 
   useEffect(() => {
-    setstate(Data)
+    setstate(Data);
   }, []);
 
   const classes = useStyles();
   return (
     <div className={classes.container}>
       <Drawer data={state} />
-      <Main data={state} updateState={updateState} findValue={findValue} searchList={searchstate} />
+      <Main
+        data={state}
+        updateState={updateState}
+        findValue={findValue}
+        searchList={searchstate}
+      />
     </div>
   );
 };
