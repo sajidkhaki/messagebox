@@ -19,6 +19,10 @@ After clicking on any of the icon its state gets updated with its specific badge
 This app uses material UI library for creating the Ui part.
 
 
+### Search Functionality
+This works on exact key word, pleae match exactly with the title.
+
+
 
 
 
