@@ -14,10 +14,6 @@ const useStyles = makeStyles({
 const App = () => {
 
   const [state, setstate] = useState([]);
-
-  console.log("start state", state)
-
-
   const updateState = (message) => {
 
     const currentState = [...state]
@@ -36,7 +32,7 @@ const App = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Drawer data = {state} />
+      <Drawer data={state} />
       <Main data={state} updateState={updateState} />
     </div>
   );

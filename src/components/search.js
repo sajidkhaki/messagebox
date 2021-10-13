@@ -45,17 +45,26 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 }));
 
 
-export default function PrimarySearchAppBar() {
+
+
+export default function PrimarySearchAppBar(props) {
+
+
+    const searchvalue = (e)=>{
+        //console.log("eee", e.target.value)
+        
+        }
+
+
     return (
         <>
             <Search >
-                <SearchIconWrapper>
-                    <SearchIcon />
-                </SearchIconWrapper>
                 <StyledInputBase
                     placeholder="Search…"
                     inputProps={{ 'aria-label': 'search' }}
-                />
+                    onKeyPress={searchvalue}
+                    />
+                <SearchIcon style={{marginTop:"10px"}} />
             </Search>
         </>
     );
