@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "Title": "New mail",
+        "Title": "new mail",
         "message":"You received new email check the mailll",
         "isFlagged": false,
         "isSpammed":false,
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "Title": "Flagged mail",
+        "Title": "flagged mail",
         "message":"you have flagged this email",
         "isFlagged": false,
         "isSpammed":false,
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "Title": "Spammed mail",
+        "Title": "spammed mail",
         "message":"welcome to the spammed email",
         "isFlagged": false,
         "isSpammed":false,
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "Title": "Deleted mail",
+        "Title": "deleted mail",
         "message":"welcome to the deleted mail",
         "isFlagged": false,
         "isSpammed":false,
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "Title": "New mail",
+        "Title": "new mail",
         "message":"welcome to the new portal again",
         "isFlagged": false,
         "isSpammed":false,
