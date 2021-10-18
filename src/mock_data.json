@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "new",
+    "title": "Title 1",
     "message": "You received new email check the mailll",
     "isFlagged": false,
     "isSpammed": false,
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "title": "flagged",
+    "title": "Title 2",
     "message": "you have flagged this email",
     "isFlagged": false,
     "isSpammed": false,
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "title": "spammed",
+    "title": "Title 3",
     "message": "welcome to the spammed email",
     "isFlagged": false,
     "isSpammed": false,
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "title": "deleted",
+    "title": "Title 4",
     "message": "welcome to the deleted mail",
     "isFlagged": false,
     "isSpammed": false,
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "title": "title5",
+    "title": "Title 5",
     "message": "welcome to the new portal again",
     "isFlagged": false,
     "isSpammed": false,
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "title": "title6",
+    "title": "Title 6",
     "message": "welcome to the new portal again",
     "isFlagged": false,
     "isSpammed": false,
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "title": "title7",
+    "title": "Title 7",
     "message": "welcome to the new portal again",
     "isFlagged": false,
     "isSpammed": false,
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "title": "title8",
+    "title": "Title 8",
     "message": "welcome to the new portal again",
     "isFlagged": false,
     "isSpammed": false,
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "title": "title9",
+    "title": "Title 9",
     "message": "welcome to the new portal again",
     "isFlagged": false,
     "isSpammed": false,
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "title": "title10",
+    "title": "Title  10",
     "message": "welcome to the new portal again",
     "isFlagged": false,
     "isSpammed": false,
