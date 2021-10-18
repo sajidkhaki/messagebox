@@ -37,6 +37,7 @@ export default function PrimarySearchAppBar(props) {
   const searchvalue = (e) => {
     console.log(e.target.value);
     let keyword = e.target.value;
+    // eslint-disable-next-line react/prop-types
     props.findValue(keyword);
   };
 
