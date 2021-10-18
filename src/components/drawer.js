@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import {
   Drawer as MUIDrawer,
@@ -55,7 +56,7 @@ const Drawer = (props) => {
   return (
     <MUIDrawer variant="permanent" className={classes.drawer}>
       <List className={classes.drawer}>
-        {itemList.map((item, index) => {
+        {itemList.map((item) => {
           const { text, icon, count } = item;
           return (
             <ListItem button key={text}>

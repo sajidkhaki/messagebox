@@ -66,21 +66,21 @@ const cards = (props) => {
                     <Link
                       component="button"
                       variant="body2"
-                      onClick={(e) => handleDelete(message)}
+                      onClick={() => handleDelete(message)}
                     >
                       <DeleteIcon color="action" />
                     </Link>
                     <Link
                       component="button"
                       variant="body2"
-                      onClick={(e) => handleFlag(message)}
+                      onClick={() => handleFlag(message)}
                     >
                       <EmojiFlagsIcon color="action" />
                     </Link>
                     <Link
                       component="button"
                       variant="body2"
-                      onClick={(e) => handleSpam(message)}
+                      onClick={() => handleSpam(message)}
                     >
                       <WarningIcon color="action" />
                     </Link>
