@@ -35,10 +35,14 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function PrimarySearchAppBar(props) {
   const searchvalue = (e) => {
-    console.log(e.target.value);
-    let keyword = e.target.value;
-    // eslint-disable-next-line react/prop-types
-    props.findValue(keyword);
+    if (e.target.value.length > 0) {
+      let keyword = e.target.value;
+      // eslint-disable-next-line react/prop-types
+      props.findValue(keyword);
+    } else {
+      // eslint-disable-next-line react/prop-types
+      props.findValue(props.data);
+    }
   };
 
   return (

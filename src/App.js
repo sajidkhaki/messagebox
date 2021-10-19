@@ -29,7 +29,7 @@ const App = () => {
     if (!key) return;
     const currentState = [...state];
     let found = currentState.filter((i) => {
-      return i.title === key;
+      return i.message.includes(key);
     });
     if (found.length > 0) {
       setsearchstate(found);

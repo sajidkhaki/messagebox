@@ -48,7 +48,7 @@ const cards = (props) => {
         sx={{ width: "100%", maxWidth: 460, bgcolor: "background.paper" }}
         key={message.id}
       >
-        <ListItem alignItems="flex-start">
+        <ListItem alignItems="flex-start" button>
           <ListItemText
             primary={message.title}
             secondary={
@@ -60,9 +60,7 @@ const cards = (props) => {
                   color="text.primary"
                 >
                   <div style={{ display: "flex" }}>
-                    <div style={{ display: "flex", flex: 1 }}>
-                      {message.message}
-                    </div>
+                    <div style={{ flex: 1 }}>{message.message}</div>
                     <Link
                       component="button"
                       variant="body2"
