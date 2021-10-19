@@ -7,6 +7,7 @@ import WarningIcon from "@mui/icons-material/Warning";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import Divider from "@material-ui/core/Divider";
 
 const cards = (props) => {
   const handleDelete = (message) => {
@@ -41,14 +42,27 @@ const cards = (props) => {
       props.updateState(message);
     }
   };
+  // const changeBackground = (e) => {
+  //   e.target.style.background = "chocolate";
+  // };
 
+  // const resetBackground = (e) => {
+  //   e.target.style.background = "aliceblue";
+  // };
   const renderMessages = (message) => {
     return message.isDeleted ? null : (
       <List
-        sx={{ width: "100%", maxWidth: 460, bgcolor: "background.paper" }}
+        sx={{ width: "100%", bgcolor: "background.paper", marginLeft: "20px" }}
         key={message.id}
+        // onMouseOver={changeBackground}
+        // onMouseOut={resetBackground}
       >
-        <ListItem alignItems="flex-start" button>
+        <Divider />
+        <ListItem
+          alignItems="flex-start"
+          button
+          // style={{ backgroundColor: "aliceblue" }}
+        >
           <ListItemText
             primary={message.title}
             secondary={

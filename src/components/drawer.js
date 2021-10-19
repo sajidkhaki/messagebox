@@ -16,7 +16,7 @@ import Warning from "@material-ui/icons/Warning";
 
 const useStyles = makeStyles({
   drawer: {
-    width: "380px",
+    width: "280px",
   },
 });
 
